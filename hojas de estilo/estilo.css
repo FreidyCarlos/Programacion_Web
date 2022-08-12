@@ -1,0 +1,23 @@
+body {
+    background-color: #FFFF00;
+}
+
+h1 {
+    color: blue;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+p {
+    color: #555555;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+}
+
+.resaltado {
+    color: rgb(252, 145, 145);
+    background-color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+}
