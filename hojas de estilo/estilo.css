@@ -1,5 +1,5 @@
 body {
-    background-color: #FFFF00;
+    background-color: #ffa600;
 }
 
 h1 {
@@ -20,4 +20,11 @@ p {
     color: rgb(252, 145, 145);
     background-color: aqua;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+#cabecera {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    color: darkgreen;
+    background-color: #555555;
 }
