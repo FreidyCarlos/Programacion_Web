@@ -7,8 +7,7 @@ b {
 }
 
 #prueba2 {
-    font-size: 30 pt;
-    font-weight: bold;
+    font-size: 50 pt;
 }
 
 a:hover {
@@ -25,7 +24,6 @@ a:visited {
 
 h3 {
     color: blue;
-    font-weight: bold;
 }
 
 h3 b {
