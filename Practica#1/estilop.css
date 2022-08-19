@@ -55,11 +55,14 @@ h3 b {
 
 #Texto1 {
     float: left;
-    width: 80%;
+    width: 70%;
+    text-align: left;
 }
 
 #Texto2 {
     float: right;
+    width: 70%;
+    text-align: right;
 }
 
 #imagen1 {
