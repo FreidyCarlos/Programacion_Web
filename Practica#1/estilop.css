@@ -29,3 +29,51 @@ h3 {
 h3 b {
     text-decoration: underline;
 }
+
+.xul {
+    list-style-type: none;
+    margin: 20px;
+    padding: 20px;
+    overflow: hidden;
+    background-color: #D6AFDC;
+}
+
+.xli {
+    float: left;
+}
+
+.xli a {
+    color: black;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.xli a:hover {
+    background-color: blue;
+}
+
+#Texto1 {
+    float: left;
+    width: 80%;
+}
+
+#Texto2 {
+    float: right;
+}
+
+#imagen1 {
+    float: right;
+}
+
+#imagen2 {
+    float: left;
+}
+
+#separacion {
+    margin: 20px;
+}
+
+.imagenes {
+    src: "/Intel/ingweb/FreidyCarlos/Practica#1";
+}
