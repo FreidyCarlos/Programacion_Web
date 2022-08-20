@@ -79,4 +79,27 @@ h3 b {
 
 .imagenes {
     src: "/Intel/ingweb/FreidyCarlos/Practica#1";
+} 
+
+table {
+    background-color: yellow;
+    border-collapse: collapse;
+    width: 40%;
+    border: 1px dashed black;
+}
+
+.fila_head{
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+    font-weight: bold;
+    border: 1px dashed black;
+}
+
+.fila{
+    border: 1px dashed black;
+}
+
+.texto{
+    border-bottom: 2px dashed red;
 }
