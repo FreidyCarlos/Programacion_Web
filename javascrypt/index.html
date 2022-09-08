@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let nombre = "Pablo";
+        let edad = 50;
+        document.write(nombre);
+        document.write("<br>");
+        document.write(edad);
+
+        let numero1 = 0;
+        let numero2 = 0;
+
+        numero1 = prompt("ingrese el primer numero");
+        numero2 = prompt("ingrese el segundo numero");
+
+        let suma = parseInt(numero1) + parseInt(numero2);
+
+        document.write("<br>");
+        document.write("la suma de los numeros es " + suma)
+
+        if (suma >= 10) {
+            document.write("<br>");
+            document.write("la suma es mayor o igual a 10");
+        } else {
+            document.write("<br>");
+            document.write("la suma es menor que 10");
+        }
+    </script>
+</body>
+
+</html>
