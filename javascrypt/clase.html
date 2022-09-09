@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //==============================COMENTAR MENOS LA PARTE QUE SE QUIERE PROBAR========================================
+        function fechas() {
+            let fecha;
+            fecha = new Date();
+            document.write("Hoy es: ");
+            document.write(fecha.getDate() + "/");
+            document.write(fecha.getMonth() + 1 + "/");
+            document.write(fecha.getFullYear());
+
+            document.write("<br>");
+
+            document.write("La Hora es: ");
+            document.write(fecha.getHours() + ":");
+            document.write(fecha.getMinutes() + ":");
+            document.write(fecha.getSeconds());
+
+        }
+        fechas();
+
+        //=====================================================================================================
+        document.write("<br>");
+
+        function cargar() {
+            for (let f = 0; f < sueldos.length; f++) {
+                let v = prompt("ingrese seldo: ");
+                sueldos[f] = parseInt(v);
+            }
+        }
+        document.write("listado de sueldos..");
+        document.write("<br>");
+        let sueldos;
+        sueldos = new Array(4);
+        //cargar(sueldos);
+        for (let f = 0; f < sueldos.length; f++) {
+            document.write(sueldos[f] + "<br>");
+        }
+
+        //=====================================================================================================
+        document.write("<br>");
+
+        let selection = parseInt(prompt("ingrese numero de 1 a 10: "));
+        let numero = parseInt(Math.random() * 10 + 1);
+        if (numero == selection) {
+            document.write("usted gano la loteria..." + numero);
+        } else {
+            document.write("que mala suerte");
+        }
+
+        //=====================================================================================================
+
+        document.write("<br>");
+
+        let frase = "hola mundo";
+        let resultado = "";
+
+        for (let i = 0; i < frase.length - 1; i++) {
+            resultado += frase.charAt(i);
+            resultado += "-";
+        }
+        resultado += frase.charAt(frase.length - 1);
+        document.write(resultado);
+    </script>
+</body>
+
+</html>
