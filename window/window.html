@@ -10,8 +10,58 @@
 
 <body>
     <form>
-        <input type="button" value="open()" onclick="abrir()">
-        <input type="button" value="alert" onclick="mostrarAlerta">
+        <input type="button" value="open" onclick="abrir()">
+        <input type="button" value="alert" onclick="mostrarAlerta()">
+        <input type="button" value="confirm" onclick="confirmar()">
+        <input type="button" value="prompt" onclick="cargarcadena()">
+        <input type="button" value="Salir" onclick="verificarsalida()">
+
+        <script>
+            function abrir() {
+                let ventana = open();
+                ventana.document.write("estoy escribiendo en la ventana");
+                ventana.document.write("esta es la segunda linea de texto...");
+            }
+
+            function mostrarAlerta() {
+                alert("alerta de clases anteriores");
+            }
+
+            function confirmar() {
+                let respuesta = confirm("Presione alguno de los botones...");
+                if (respuesta == true) {
+                    alert("presiono aceptar");
+                } else {
+                    alert("presiono cancelar");
+                }
+            }
+
+            function cargarcadena() {
+                let cadena = prompt("Ingrese un texto");
+                alert("Usted ingreso: " + cadena);
+            }
+
+            function verificarsalida() {
+                if (window.confirm("desea salir e ir a la U?")) {
+                    window.location = "http://www.unilibre.edu.co";
+                } else {
+                    window.alert("No salio.");
+                }
+            }
+
+            //  ============================propiedad del objeto screen===============================
+
+            document.write("<br><br>alto: " + screen.availHeight + "<br>");
+            document.write("ancho: " + screen.availWidth + "<br>");
+            document.write("color: " + screen.colorDepth + "<br>");
+
+            //  ===========================propiedad del objeto navegador=============================
+
+            document.write("<br><br>Nombre: " + navigator.appName + "<br>");
+            document.write("Version: " + navigator.appVersion + "<br>");
+            document.write("Cookies: " + navigator.cookieEnabled + "<br>");
+            document.write("Complementos: " + navigator.plugins + "<br>");
+        </script>
     </form>
 </body>
 
