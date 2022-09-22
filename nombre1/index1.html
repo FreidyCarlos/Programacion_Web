@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <input type="password" id="clave">
+        <br>
+        <input type="button" value="Confirmar" onclick="verificar()">
+    </form>
+    <script>
+        function verificar() {
+            let clave = document.getElementById('clave').value;
+            if (clave.length < 6) {
+                alert("la clave no puede ser menor a 6 caracteres!");
+            } else {
+                alert("Clave correcta!");
+            }
+        }
+    </script>
+</body>
+
+</html>
