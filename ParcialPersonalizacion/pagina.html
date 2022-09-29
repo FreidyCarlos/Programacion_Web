@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Buscaminas</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
@@ -13,30 +14,34 @@
         function pintarTablero(numFilas, numColumnas) {
             let tablero = document.querySelector("#tablero");
 
+            document.querySelector("html").style.setProperty("--num-filas", numFilas);
+            document.querySelector("html").style.setProperty("--num-columnas", numColumnas);
+
             for (let f = 0; f < numFilas; f++) {
                 for (let c = 0; c < numColumnas; c++) {
                     let newDiv = document.createElement("div");
                     tablero.appendChild(newDiv);
                 }
             }
+            for (let f = 0; f < numFilas; f++) {
+                for (let c = 0; c < numColumnas; c++) {
+                    let newDiv = document.createElement("div");
+                    newDiv.setAttribute("id", "f" + f + "_c" + c);
+                    newDiv.dataset.fila = f;
+                    newDiv.dataset.columna = c;
+                    newDiv.addEventListener("contextmenu", marcar); //evento con el botón derecho del raton
+                    newDiv.addEventListener("click", destapar); //evento con el botón izquierdo del raton
+
+                    tablero.appendChild(newDiv);
+                }
+            }
+
         }
+
         let tablero = document.querySelector("#tablero");
     </script>
 
-    <div id="tablero">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
+    <div id="tablero"></div>
 </body>
 
 </html>
